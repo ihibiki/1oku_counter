@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "CounterViewController.h"
 
 @interface AppDelegate ()
 
-@property ViewController *viewController;
+@property CounterViewController *viewController;
 
 @end
 
@@ -24,7 +24,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] init];
+    self.viewController = [[CounterViewController alloc] init];
     
     [self.window setRootViewController:self.viewController];
     [self.window makeKeyAndVisible];

@@ -6,18 +6,20 @@
 //  Copyright (c) 2014年 Hibiki Imai. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CounterViewController.h"
 #import "CounterView.h"
 #import "AFNetworking.h"
+#import "MotionViewController.h"
 
-@interface ViewController ()
+@interface CounterViewController ()
 
 @property CounterView *counterView;
 @property NSMutableArray *lastGetPrices; //直近APIを叩いて取得した10日分の1億カウンターの額
+@property UIButton *buttonToMotion;
 
 @end
 
-@implementation ViewController
+@implementation CounterViewController
 
 NSTimer *timer = nil;
 int sequence = 0;   //NSTimer内でのリアルタイム予想更新の回数管理変数
@@ -39,6 +41,18 @@ int autoUpdateTime = 20;  //sequenceの上限（終了したら再びAPIを叩�
 
     [self.view addSubview:self.counterView];
     self.lastGetPrices = [NSMutableArray array];
+    
+    self.buttonToMotion = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.buttonToMotion.frame = CGRectMake(10, 10, 100, 30);
+    [self.buttonToMotion setTitle:@"画面遷移するよ" forState:UIControlStateNormal];
+    
+    [self.buttonToMotion addTarget:self action:@selector(pushButtonToMotion:)
+                     forControlEvents:UIControlEventTouchDown];
+    [self.buttonToMotion sizeToFit];
+    self.buttonToMotion.center = CGPointMake(self.view.frame.size.width * 0.5,
+                                          self.view.frame.size.height * 0.5 + 120);
+    [self.view addSubview:self.buttonToMotion];
+
 }
 
 - (void)requestPriceToApi
@@ -106,6 +120,16 @@ int autoUpdateTime = 20;  //sequenceの上限（終了したら再びAPIを叩�
         [timer invalidate];
         [self requestPriceToApi];
     }
+}
+
+- (void)pushButtonToMotion:(id)sender
+{
+    UIViewController *next = [[MotionViewController alloc] init];
+    next.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:next animated:YES completion:^ {
+        // 完了時の処理をここに書きます
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {

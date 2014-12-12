@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>289690F9-4503-417A-97D3-A98F6F75E064</string>
+	<key>IDESourceControlProjectName</key>
+	<string>1okuen_counter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8759DA6E70AA9060E433566B9A6DE730CA456AB1</key>
+		<string>https://github.com/0h3k2a4/1oku_counter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>1okuen_counter.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8759DA6E70AA9060E433566B9A6DE730CA456AB1</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/0h3k2a4/1oku_counter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8759DA6E70AA9060E433566B9A6DE730CA456AB1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8759DA6E70AA9060E433566B9A6DE730CA456AB1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>1okuen_counter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
