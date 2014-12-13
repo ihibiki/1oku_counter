@@ -10,12 +10,14 @@
 #import "CounterView.h"
 #import "AFNetworking.h"
 #import "MotionViewController.h"
+#import "WebResponseViewController.h"
 
 @interface CounterViewController ()
 
 @property CounterView *counterView;
 @property NSMutableArray *lastGetPrices; //直近APIを叩いて取得した10日分の1億カウンターの額
 @property UIButton *buttonToMotion;
+@property UIButton *buttonToWebView;
 
 @end
 
@@ -52,6 +54,18 @@ int autoUpdateTime = 20;  //sequenceの上限（終了したら再びAPIを叩�
     self.buttonToMotion.center = CGPointMake(self.view.frame.size.width * 0.5,
                                           self.view.frame.size.height * 0.5 + 120);
     [self.view addSubview:self.buttonToMotion];
+    
+    
+    self.buttonToWebView = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.buttonToWebView.frame = CGRectMake(10, 10, 100, 30);
+    [self.buttonToWebView setTitle:@"Web画面に移動" forState:UIControlStateNormal];
+    
+    [self.buttonToWebView addTarget:self action:@selector(pushButtonToWebView:)
+                  forControlEvents:UIControlEventTouchDown];
+    [self.buttonToWebView sizeToFit];
+    self.buttonToWebView.center = CGPointMake(self.view.frame.size.width * 0.5,
+                                             self.view.frame.size.height * 0.5 + 160);
+    [self.view addSubview:self.buttonToWebView];
 
 }
 
@@ -130,6 +144,16 @@ int autoUpdateTime = 20;  //sequenceの上限（終了したら再びAPIを叩�
         // 完了時の処理をここに書きます
     }];
 
+}
+
+- (void)pushButtonToWebView:(id)sender
+{
+    UIViewController *next = [[WebResponseViewController alloc] init];
+    next.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:next animated:YES completion:^ {
+        // 完了時の処理をここに書きます
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -80,7 +80,7 @@
                                            self.motionManager.accelerometerData.acceleration.z,
                                            self.motionManager.gyroData.rotationRate.z];
             NSLog(@"無事MorionDataは取れました");
-    };
+        };
     
         NSOperationQueue *queue = [NSOperationQueue currentQueue];
         [self.motionManager startDeviceMotionUpdatesToQueue:queue withHandler:handler];

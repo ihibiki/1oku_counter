@@ -18,6 +18,8 @@
 		E63C8AB41A2CC7D400DA6B0E /* CounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E63C8AB31A2CC7D400DA6B0E /* CounterView.m */; };
 		E63C8AB61A2DDE0B00DA6B0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63C8AB51A2DDE0A00DA6B0E /* Foundation.framework */; };
 		E65F6E641A3A0E36009351EB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65F6E631A3A0E36009351EB /* CoreMotion.framework */; };
+		E65F6E671A3CA4BB009351EB /* WebResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65F6E661A3CA4BB009351EB /* WebResponseViewController.m */; };
+		E65F6E6A1A3CA586009351EB /* WebResponseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E65F6E691A3CA586009351EB /* WebResponseView.m */; };
 		E6E12F601A39A6410063689B /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E12F5F1A39A6410063689B /* MotionViewController.m */; };
 		E6E12F631A39A6880063689B /* MotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E12F621A39A6880063689B /* MotionView.m */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,10 @@
 		E63C8AB31A2CC7D400DA6B0E /* CounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterView.m; sourceTree = "<group>"; };
 		E63C8AB51A2DDE0A00DA6B0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E65F6E631A3A0E36009351EB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E65F6E651A3CA4BB009351EB /* WebResponseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebResponseViewController.h; sourceTree = "<group>"; };
+		E65F6E661A3CA4BB009351EB /* WebResponseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebResponseViewController.m; sourceTree = "<group>"; };
+		E65F6E681A3CA586009351EB /* WebResponseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebResponseView.h; sourceTree = "<group>"; };
+		E65F6E691A3CA586009351EB /* WebResponseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebResponseView.m; sourceTree = "<group>"; };
 		E6E12F5E1A39A6410063689B /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
 		E6E12F5F1A39A6410063689B /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
 		E6E12F611A39A6880063689B /* MotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionView.h; sourceTree = "<group>"; };
@@ -130,6 +136,8 @@
 				E6E12F5E1A39A6410063689B /* MotionViewController.h */,
 				E6E12F5F1A39A6410063689B /* MotionViewController.m */,
 				E6038F891A2CBC000063E1E3 /* CounterViewController.m */,
+				E65F6E651A3CA4BB009351EB /* WebResponseViewController.h */,
+				E65F6E661A3CA4BB009351EB /* WebResponseViewController.m */,
 				E6038FA91A2CBFF70063E1E3 /* views */,
 				E6038F8B1A2CBC000063E1E3 /* Main.storyboard */,
 				E6038F8E1A2CBC000063E1E3 /* Images.xcassets */,
@@ -185,6 +193,8 @@
 				E63C8AB21A2CC7D400DA6B0E /* CounterView.h */,
 				E6E12F611A39A6880063689B /* MotionView.h */,
 				E6E12F621A39A6880063689B /* MotionView.m */,
+				E65F6E681A3CA586009351EB /* WebResponseView.h */,
+				E65F6E691A3CA586009351EB /* WebResponseView.m */,
 				E63C8AB31A2CC7D400DA6B0E /* CounterView.m */,
 			);
 			name = views;
@@ -331,9 +341,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6E12F601A39A6410063689B /* MotionViewController.m in Sources */,
+				E65F6E671A3CA4BB009351EB /* WebResponseViewController.m in Sources */,
 				E6038F8A1A2CBC000063E1E3 /* CounterViewController.m in Sources */,
 				E6038F871A2CBC000063E1E3 /* AppDelegate.m in Sources */,
 				E6038F841A2CBC000063E1E3 /* main.m in Sources */,
+				E65F6E6A1A3CA586009351EB /* WebResponseView.m in Sources */,
 				E6E12F631A39A6880063689B /* MotionView.m in Sources */,
 				E63C8AB41A2CC7D400DA6B0E /* CounterView.m in Sources */,
 			);
